@@ -87,7 +87,7 @@ const Contact = () => {
           <div className="mt-10 relative overflow-hidden border-subtle aspect-[16/9]">
             <iframe
               title="EIRS Location"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.9!2d75.7873!3d26.9124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDU0JzQ0LjYiTiA3NcKwNDcnMTQuMyJF!5e0!3m2!1sen!2sin!4v1"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4754.856830200963!2d77.5952568!3d13.1737971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae173bb0000001%3A0x4df4add27d009e2b!2sEmbassy%20International%20Riding%20School!5e1!3m2!1sen!2sin!4v1776339531545!5m2!1sen!2sin"
               width="100%"
               height="100%"
               style={{ border: 0, filter: "invert(0.9) hue-rotate(180deg) saturate(0.3)" }}
