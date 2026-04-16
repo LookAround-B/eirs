@@ -50,6 +50,10 @@ const products = [
 const luxuryEase = [0.2, 0, 0, 1] as const;
 
 const Products = () => {
+  const navigateTo = (href: string) => {
+    window.location.assign(href);
+  };
+
   return (
     <div className="min-h-screen bg-background">
       <div className="noise-overlay" />
@@ -92,7 +96,16 @@ const Products = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-50px" }}
             transition={{ duration: 0.9, delay: i * 0.05, ease: luxuryEase }}
-            className="group relative overflow-hidden border-subtle"
+            className="group relative overflow-hidden border-subtle cursor-pointer"
+            role="link"
+            tabIndex={0}
+            onClick={() => navigateTo(product.href)}
+            onKeyDown={(event) => {
+              if (event.key === "Enter" || event.key === " ") {
+                event.preventDefault();
+                navigateTo(product.href);
+              }
+            }}
           >
             <div className={`grid grid-cols-1 lg:grid-cols-2 min-h-[500px] ${i % 2 === 1 ? "lg:direction-rtl" : ""}`}>
               {/* Image side */}

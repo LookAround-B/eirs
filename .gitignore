@@ -24,5 +24,6 @@ dist-ssr
 *.sw?
 .next/
 .next/*
+tsconfig.tsbuildinfo
 
 
