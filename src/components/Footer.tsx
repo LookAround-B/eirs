@@ -60,7 +60,7 @@ const Footer = () => {
             {/* Stats row */}
             <div className="flex gap-8">
               {[
-                { val: "74", label: "Stalls" },
+                { val: "100+", label: "Stalls" },
                 { val: "12", label: "Trainers" },
                 { val: "200+", label: "Acres" },
               ].map((stat) => (
@@ -110,13 +110,13 @@ const Footer = () => {
                 <Mail size={14} className="text-primary shrink-0" />
                 info@eirs.in
               </a>
-              <a href="tel:+919876543210" className="flex items-center gap-3 prose-luxury text-sm hover:text-primary transition-colors duration-300">
+              {/* <a href="tel:+919876543210" className="flex items-center gap-3 prose-luxury text-sm hover:text-primary transition-colors duration-300">
                 <Phone size={14} className="text-primary shrink-0" />
                 +91 98765 43210
-              </a>
+              </a> */}
               <div className="flex items-start gap-3 prose-luxury text-sm">
                 <MapPin size={14} className="text-primary shrink-0 mt-0.5" />
-                <span>Embassy International Riding School,<br />Rajasthan, India</span>
+                <span>Embassy International Riding School,<br />Bangalore, India</span>
               </div>
             </div>
           </div>

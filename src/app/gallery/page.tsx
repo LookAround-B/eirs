@@ -38,7 +38,7 @@ const images: GalleryImage[] = [
   { src: showjumping.src, title: "Airborne", category: "Show Jumping", hotspot: "1.60m Grand Prix — Clear Round", aspect: "portrait" },
   { src: galleryGallop.src, title: "Water Cross", category: "Training", hotspot: "Cross-Country Water Complex — Phase 3", aspect: "landscape" },
   { src: galleryRider.src, title: "Golden Hour", category: "Life", hotspot: "Evening Hack — Rajasthan Countryside", aspect: "portrait" },
-  { src: stable.src, title: "The Stables", category: "Facility", hotspot: "74 Stalls — Climate-controlled, Oak finish", aspect: "portrait" },
+  { src: stable.src, title: "The Stables", category: "Facility", hotspot: "100 Stalls — Climate-controlled, Oak finish", aspect: "portrait" },
   { src: galleryBridle.src, title: "Chrome & Leather", category: "Equipment", hotspot: "Loose Ring Snaffle — German Silver", aspect: "square" },
   { src: estate.src, title: "Estate Aerial", category: "Facility", hotspot: "200+ Acres — 4 Competition Arenas", aspect: "landscape" },
   { src: galleryHerd.src, title: "Morning Run", category: "Horses", hotspot: "Turnout — 3 Thoroughbred Geldings", aspect: "landscape" },

@@ -4,10 +4,10 @@ import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 
 const stats = [
-  { value: 74, suffix: "", label: "Stalls" },
-  { value: 12, suffix: "", label: "Olympic Trainers" },
+  { value: 100, suffix: "+", label: "Stalls" },
+  { value: 30, suffix: "+", label: "Years of Experience" },
   { value: 200, suffix: "+", label: "Acres" },
-  { value: 0.01, suffix: "s", label: "Difference", decimals: 2 },
+  { value: 1, suffix: "st", label: "Indian Olympian" },
 ];
 
 const CountUp = ({ value, suffix, decimals = 0 }: { value: number; suffix: string; decimals?: number }) => {

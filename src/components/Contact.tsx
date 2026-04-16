@@ -71,23 +71,23 @@ const Contact = () => {
           <div className="space-y-6">
             <div>
               <p className="label-mono text-[10px] opacity-50 mb-1">Location</p>
-              <p className="text-foreground text-sm">Rajasthan, India</p>
+              <p className="text-foreground text-sm">Bangalore, India</p>
             </div>
             <div>
               <p className="label-mono text-[10px] opacity-50 mb-1">Email</p>
               <p className="text-foreground text-sm">info@eirs.in</p>
             </div>
-            <div>
+            {/* <div>
               <p className="label-mono text-[10px] opacity-50 mb-1">Phone</p>
               <p className="text-foreground text-sm">+91 98765 43210</p>
-            </div>
+            </div> */}
           </div>
 
           {/* Embedded map placeholder */}
           <div className="mt-10 relative overflow-hidden border-subtle aspect-[16/9]">
             <iframe
               title="EIRS Location"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.9!2d75.7873!3d26.9124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDU0JzQ0LjYiTiA3NcKwNDcnMTQuMyJF!5e0!3m2!1sen!2sin!4v1"
+              src="https://www.google.com/maps/place/Embassy+International+Riding+School/@13.1737971,77.5926819,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae173bb0000001:0x4df4add27d009e2b!8m2!3d13.1737971!4d77.5952568!16s%2Fg%2F1vfwb8lj?entry=ttu&g_ep=EgoyMDI2MDQxMy4wIKXMDSoASAFQAw%3D%3D"
               width="100%"
               height="100%"
               style={{ border: 0, filter: "invert(0.9) hue-rotate(180deg) saturate(0.3)" }}

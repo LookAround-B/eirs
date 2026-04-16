@@ -122,9 +122,9 @@ const BookSession = () => {
       >
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {[
-            { icon: MapPin, label: "Location", value: "Rajasthan, India" },
+            { icon: MapPin, label: "Location", value: "Bangalore, India" },
             { icon: Clock, label: "Sessions", value: "6:00 AM – 6:00 PM" },
-            { icon: Phone, label: "Helpline", value: "+91 98765 43210" },
+            // { icon: Phone, label: "Helpline", value: "+91 98765 43210" },
             { icon: Mail, label: "Email", value: "bookings@eirs.in" },
           ].map((item, i) => (
             <div key={item.label} className="flex items-start gap-3 p-5 border-subtle bg-card/50">
@@ -163,10 +163,10 @@ const BookSession = () => {
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
+                {/* <div>
                   <label className="label-mono text-[10px] opacity-50 mb-2 block">Phone</label>
                   <input name="phone" type="tel" value={formData.phone} onChange={handleChange} maxLength={20} className={inputClass} placeholder="+91 XXXXX XXXXX" />
-                </div>
+                </div> */}
                 <div>
                   <label className="label-mono text-[10px] opacity-50 mb-2 block">Session Type *</label>
                   <select name="sessionType" value={formData.sessionType} onChange={handleChange} required className={`${inputClass} appearance-none cursor-pointer`}>
