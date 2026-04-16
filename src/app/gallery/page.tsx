@@ -30,20 +30,20 @@ interface GalleryImage {
 }
 
 const images: GalleryImage[] = [
-  { src: heroHorse, title: "Black Stallion", category: "Horses", hotspot: "Friesian Stallion — 17.2 hands", aspect: "landscape" },
-  { src: galleryWhiteHorse, title: "Andalusian Grace", category: "Horses", hotspot: "Andalusian Mare — Pure Spanish", aspect: "portrait" },
-  { src: dressage, title: "Piaffe", category: "Dressage", hotspot: "Grand Prix Dressage — Score 78.4%", aspect: "portrait" },
-  { src: galleryArena, title: "The Arena", category: "Facility", hotspot: "Indoor Arena — 80m × 40m, FEI Standard", aspect: "landscape" },
-  { src: gallerySaddle, title: "Precision Tack", category: "Equipment", hotspot: "Custom Hermès Saddle — Hand-stitched", aspect: "landscape" },
-  { src: showjumping, title: "Airborne", category: "Show Jumping", hotspot: "1.60m Grand Prix — Clear Round", aspect: "portrait" },
-  { src: galleryGallop, title: "Water Cross", category: "Training", hotspot: "Cross-Country Water Complex — Phase 3", aspect: "landscape" },
-  { src: galleryRider, title: "Golden Hour", category: "Life", hotspot: "Evening Hack — Rajasthan Countryside", aspect: "portrait" },
-  { src: stable, title: "The Stables", category: "Facility", hotspot: "74 Stalls — Climate-controlled, Oak finish", aspect: "portrait" },
-  { src: galleryBridle, title: "Chrome & Leather", category: "Equipment", hotspot: "Loose Ring Snaffle — German Silver", aspect: "square" },
-  { src: estate, title: "Estate Aerial", category: "Facility", hotspot: "200+ Acres — 4 Competition Arenas", aspect: "landscape" },
-  { src: galleryHerd, title: "Morning Run", category: "Horses", hotspot: "Turnout — 3 Thoroughbred Geldings", aspect: "landscape" },
-  { src: horsePortrait, title: "Silent Power", category: "Horses", hotspot: "Marwari Stallion — Breed Heritage", aspect: "landscape" },
-  { src: galleryAerial, title: "The Ring", category: "Facility", hotspot: "Outdoor Menage — 60m × 20m, Sand & Fibre", aspect: "landscape" },
+  { src: heroHorse.src, title: "Black Stallion", category: "Horses", hotspot: "Friesian Stallion — 17.2 hands", aspect: "landscape" },
+  { src: galleryWhiteHorse.src, title: "Andalusian Grace", category: "Horses", hotspot: "Andalusian Mare — Pure Spanish", aspect: "portrait" },
+  { src: dressage.src, title: "Piaffe", category: "Dressage", hotspot: "Grand Prix Dressage — Score 78.4%", aspect: "portrait" },
+  { src: galleryArena.src, title: "The Arena", category: "Facility", hotspot: "Indoor Arena — 80m × 40m, FEI Standard", aspect: "landscape" },
+  { src: gallerySaddle.src, title: "Precision Tack", category: "Equipment", hotspot: "Custom Hermès Saddle — Hand-stitched", aspect: "landscape" },
+  { src: showjumping.src, title: "Airborne", category: "Show Jumping", hotspot: "1.60m Grand Prix — Clear Round", aspect: "portrait" },
+  { src: galleryGallop.src, title: "Water Cross", category: "Training", hotspot: "Cross-Country Water Complex — Phase 3", aspect: "landscape" },
+  { src: galleryRider.src, title: "Golden Hour", category: "Life", hotspot: "Evening Hack — Rajasthan Countryside", aspect: "portrait" },
+  { src: stable.src, title: "The Stables", category: "Facility", hotspot: "74 Stalls — Climate-controlled, Oak finish", aspect: "portrait" },
+  { src: galleryBridle.src, title: "Chrome & Leather", category: "Equipment", hotspot: "Loose Ring Snaffle — German Silver", aspect: "square" },
+  { src: estate.src, title: "Estate Aerial", category: "Facility", hotspot: "200+ Acres — 4 Competition Arenas", aspect: "landscape" },
+  { src: galleryHerd.src, title: "Morning Run", category: "Horses", hotspot: "Turnout — 3 Thoroughbred Geldings", aspect: "landscape" },
+  { src: horsePortrait.src, title: "Silent Power", category: "Horses", hotspot: "Marwari Stallion — Breed Heritage", aspect: "landscape" },
+  { src: galleryAerial.src, title: "The Ring", category: "Facility", hotspot: "Outdoor Menage — 60m × 20m, Sand & Fibre", aspect: "landscape" },
 ];
 
 const categories = ["All", ...Array.from(new Set(images.map((img) => img.category)))];
