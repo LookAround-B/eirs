@@ -98,9 +98,12 @@
   color: hsl(var(--primary));
 }
 
-/* Override label-mono color inside buttons */
+/* Override label-mono color inside buttons and links */
 button .label-mono,
-[type="submit"] .label-mono {
+a .label-mono,
+[type="submit"] .label-mono,
+.bg-primary .label-mono,
+.text-primary-foreground.label-mono {
   color: inherit;
 }
 

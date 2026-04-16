@@ -8,7 +8,7 @@ import aiCavalliImg from "@/assets/product-ai-cavalli.jpg";
 import efmImg from "@/assets/product-efm.jpg";
 
 import eventsImg from "@/assets/product-events.jpg";
-import { EFM_APP_URL, EVENTS_APP_URL } from "@/lib/app-links";
+import { AI_CAVALLI_APP_URL, EFM_APP_URL, EVENTS_APP_URL } from "@/lib/app-links";
 
 const products = [
   {
@@ -16,19 +16,20 @@ const products = [
     tagline: "Equine Intelligence, Redefined",
     description:
       "AI-powered biometric monitoring and health analytics for your horses. Real-time tracking of vitals, gait analysis, injury prediction, and performance optimization — all through a single intelligent platform.",
-    image: aiCavalliImg,
+    image: efmImg,
     features: ["Real-time Biometrics", "Gait Analysis AI", "Injury Prediction", "Performance Reports"],
-    status: "Coming Soon",
+    status: "Now Live",
     accent: "from-primary/20 to-transparent",
+    href: AI_CAVALLI_APP_URL,
   },
   {
     name: "EFM",
     tagline: "Equestrian Facility Management",
     description:
       "End-to-end stable and facility management software. From feed scheduling and veterinary records to staff coordination and financial reporting — run your operation with surgical precision.",
-    image: efmImg,
+    image: aiCavalliImg,
     features: ["Stable Operations", "Vet Records", "Staff Management", "Financial Dashboard"],
-    status: "Coming Soon",
+    status: "Now Live",
     accent: "from-primary/15 to-transparent",
     href: EFM_APP_URL,
   },

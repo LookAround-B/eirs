@@ -12,13 +12,13 @@ const products = [
   {
     name: "Ai-Cavalli",
     tagline: "AI-Powered Equine Intelligence",
-    image: aiCavalliImg,
+    image: efmImg,
     href: AI_CAVALLI_APP_URL,
   },
   {
     name: "EFM",
     tagline: "Equestrian Facility Management",
-    image: efmImg,
+    image: aiCavalliImg,
     href: EFM_APP_URL,
   },
 
