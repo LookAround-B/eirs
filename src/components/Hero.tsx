@@ -30,7 +30,7 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.3, ease: [0.2, 0, 0, 1] }}
           className="label-mono mb-6"
         >
-          India's Premier Equestrian Estate
+          India's Premier Equestrian School
         </motion.p>
 
         <motion.h1

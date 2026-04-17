@@ -23,7 +23,6 @@ const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    // Validation
     const name = formData.name.trim();
     const email = formData.email.trim();
     const message = formData.message.trim();
@@ -42,7 +41,6 @@ const Contact = () => {
     }
 
     setIsSubmitting(true);
-    // Simulate submission
     setTimeout(() => {
       setIsSubmitting(false);
       toast.success("Your inquiry has been received. We'll be in touch shortly.");
@@ -53,7 +51,6 @@ const Contact = () => {
   return (
     <section id="contact" className="section-luxury">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
-        {/* Left — Info */}
         <motion.div
           initial={{ opacity: 0, y: 15 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -62,10 +59,12 @@ const Contact = () => {
         >
           <p className="label-mono mb-4">Contact</p>
           <h2 className="heading-display text-foreground text-4xl md:text-5xl mb-6">
-            Begin Your<br />Journey
+            Begin Your
+            <br />
+            Journey
           </h2>
           <p className="prose-luxury text-sm md:text-base max-w-md mb-10">
-            Whether you're seeking training, stable management, or a private experience — our team will craft a bespoke program for you.
+            Whether you're seeking training, stable management, or a private experience - we will craft a bespoke program for you.
           </p>
 
           <div className="space-y-6">
@@ -75,7 +74,7 @@ const Contact = () => {
             </div>
             <div>
               <p className="label-mono text-[10px] opacity-50 mb-1">Email</p>
-              <p className="text-foreground text-sm">info@eirs.in</p>
+              <p className="text-foreground text-sm">info@eirs.app</p>
             </div>
             <div>
               <p className="label-mono text-[10px] opacity-50 mb-1">Contact Numbers</p>
@@ -84,7 +83,6 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* Embedded map placeholder */}
           <div className="mt-10 relative overflow-hidden border-subtle aspect-[16/9]">
             <iframe
               title="EIRS Location"
@@ -100,7 +98,6 @@ const Contact = () => {
           </div>
         </motion.div>
 
-        {/* Right — Form */}
         <motion.div
           initial={{ opacity: 0, y: 15 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -169,16 +166,30 @@ const Contact = () => {
                 onChange={handleChange}
                 className="w-full bg-transparent border-b border-foreground/10 py-3 text-foreground text-sm focus:outline-none focus:border-primary transition-colors duration-300 appearance-none cursor-pointer"
               >
-                <option value="" className="bg-background">Select an option</option>
-                <option value="dressage" className="bg-background">Dressage Training</option>
-                <option value="jumping" className="bg-background">Show Jumping</option>
-                <option value="stable" className="bg-background">Stable Management</option>
-                <option value="trail" className="bg-background">Trail Rides</option>
-                <option value="polo" className="bg-background">Polo</option>
-                <option value="private" className="bg-background">Private Lessons</option>
-                <option value="retreat" className="bg-background">Equestrian Retreat</option>
-                <option value="products" className="bg-background">EIRS Products (Ai-Cavalli / EFM / Events)</option>
-                <option value="other" className="bg-background">Other</option>
+                <option value="" className="bg-background">
+                  Select an option
+                </option>
+                <option value="dressage" className="bg-background">
+                  Dressage Training
+                </option>
+                <option value="jumping" className="bg-background">
+                  Show Jumping
+                </option>
+                <option value="stable" className="bg-background">
+                  Stable Management
+                </option>
+                <option value="trail" className="bg-background">
+                  Trail Rides
+                </option>
+                <option value="private" className="bg-background">
+                  Private Lessons
+                </option>
+                <option value="retreat" className="bg-background">
+                  Equestrian Retreat
+                </option>
+                <option value="products" className="bg-background">
+                  EIRS Products (Ai-Cavalli / EFM / Events)
+                </option>
               </select>
             </div>
 

@@ -21,7 +21,6 @@ const Footer = () => {
       transition={{ duration: 0.8, ease: luxuryEase }}
       className="relative overflow-hidden"
     >
-      {/* Top CTA band */}
       <div className="section-luxury border-t border-subtle">
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
           <div>
@@ -43,20 +42,17 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Main footer grid */}
       <div className="px-6 md:px-16 lg:px-24 py-16 md:py-20 border-t border-subtle">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-8">
-          {/* Brand col */}
           <div className="md:col-span-5">
             <h3 className="heading-display text-foreground text-5xl md:text-6xl mb-1 tracking-widest">EIRS</h3>
             <p className="text-[9px] font-mono uppercase tracking-[0.15em] text-muted-foreground mb-5">
               Embassy International Riding School
             </p>
             <p className="prose-luxury text-sm max-w-sm mb-8">
-              India's premier equestrian estate. Where heritage meets high-performance engineering across 200+ acres of sovereign grounds.
+              India's premier equestrian school. Where heritage meets high-performance engineering across 200+ acres of sovereign grounds.
             </p>
 
-            {/* Stats row */}
             <div className="flex gap-8">
               {[
                 { val: "100+", label: "Stables" },
@@ -71,7 +67,6 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Navigate col */}
           <div className="md:col-span-3">
             <p className="label-mono mb-6 opacity-60">Navigate</p>
             <div className="flex flex-col gap-4">
@@ -91,34 +86,36 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Contact col */}
           <div className="md:col-span-4">
             <p className="label-mono mb-6 opacity-60">Get in Touch</p>
             <div className="flex flex-col gap-4">
-              <a href="mailto:info@eirs.in" className="flex items-center gap-3 prose-luxury text-sm hover:text-primary transition-colors duration-300">
+              <a href="mailto:info@eirs.app" className="flex items-center gap-3 prose-luxury text-sm hover:text-primary transition-colors duration-300">
                 <Mail size={14} className="text-primary shrink-0" />
-                info@eirs.in
-              </a>
-              <a href="tel:+919844065013" className="flex items-center gap-3 prose-luxury text-sm hover:text-primary transition-colors duration-300">
-                <Phone size={14} className="text-primary shrink-0" />
-                +91 98440 65013 (Office)
+                info@eirs.app
               </a>
               <a href="https://wa.me/917353779533" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 prose-luxury text-sm hover:text-primary transition-colors duration-300">
                 <Phone size={14} className="text-primary shrink-0" />
                 +91 73537 79533 (Preferably WhatsApp)
               </a>
+              <a href="tel:+919844065013" className="flex items-center gap-3 prose-luxury text-sm hover:text-primary transition-colors duration-300">
+                <Phone size={14} className="text-primary shrink-0" />
+                +91 98440 65013 (Office)
+              </a>
               <div className="flex items-start gap-3 prose-luxury text-sm">
                 <MapPin size={14} className="text-primary shrink-0 mt-0.5" />
-                <span>Embassy International Riding School,<br />Bangalore, India</span>
+                <span>
+                  Embassy International Riding School,
+                  <br />
+                  Bangalore, India
+                </span>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Bottom bar */}
       <div className="px-6 md:px-16 lg:px-24 py-6 border-t border-subtle flex flex-col md:flex-row justify-between items-center gap-3">
-        <p className="prose-luxury text-xs">© 2026 EIRS. All rights reserved.</p>
+        <p className="prose-luxury text-xs">(c) 2026 EIRS. All rights reserved.</p>
         <p className="label-mono text-[10px] opacity-30">Precision in Every Stride</p>
         <p className="prose-luxury text-xs opacity-40">
           Powered by{" "}
@@ -133,7 +130,6 @@ const Footer = () => {
         </p>
       </div>
 
-      {/* Decorative large watermark */}
       <div className="absolute bottom-0 right-0 pointer-events-none select-none overflow-hidden opacity-[0.02]">
         <span className="heading-display text-[20rem] md:text-[28rem] leading-none text-foreground block -mb-20 -mr-10">
           EIRS

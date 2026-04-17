@@ -6,7 +6,6 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import aiCavalliImg from "@/assets/product-ai-cavalli.jpg";
 import efmImg from "@/assets/product-efm.jpg";
-
 import eventsImg from "@/assets/product-events.jpg";
 import { AI_CAVALLI_APP_URL, EFM_APP_URL, EVENTS_APP_URL } from "@/lib/app-links";
 
@@ -15,9 +14,9 @@ const products = [
     name: "Ai-Cavalli",
     tagline: "Ai-Cavalli, Reimagined",
     description:
-      "An Indo-Italian café at EIRS—where tradition, taste, and equestrian elegance come together in a refined culinary experience. From rich Italian flavors to soulful Indian classics, Ai-Cavalli blends cultures seamlessly, creating a space where riders, guests, and enthusiasts can unwind, connect, and indulge in a setting inspired by the grace of the equestrian world.",
+      "An Indo-Italian cafe at EIRS where tradition, taste, and equestrian elegance come together in a refined culinary experience. From rich Italian flavors to soulful Indian classics, Ai-Cavalli blends cultures seamlessly for riders, guests, and enthusiasts alike.",
     image: aiCavalliImg,
-    features: ["Indo-Italian Fusion", "Equestrian Café Experience", "Gourmet Dining", "Heritage Meets Modern Taste"],
+    features: ["Indo-Italian Fusion", "Equestrian Cafe Experience", "Gourmet Dining", "Heritage Meets Modern Taste"],
     status: "Now Live",
     accent: "from-primary/20 to-transparent",
     href: AI_CAVALLI_APP_URL,
@@ -26,21 +25,20 @@ const products = [
     name: "EFM",
     tagline: "Equestrian Facility Management",
     description:
-      "End-to-end stable and facility management software. From feed scheduling and veterinary records to staff coordination and financial reporting — run your operation with surgical precision.",
+      "End-to-end stable and facility management software. From feed scheduling and veterinary records to staff coordination and financial reporting - run your operation with precision.",
     image: efmImg,
     features: ["Stable Operations", "Vet Records", "Staff Management", "Financial Dashboard"],
     status: "Now Live",
     accent: "from-primary/15 to-transparent",
     href: EFM_APP_URL,
   },
-
   {
     name: "Events",
-    tagline: "Bespoke Event Booking & Curation",
+    tagline: "Estate Event Planning & Curation",
     description:
-      "From black-tie galas and polo tournaments to intimate equestrian-themed weddings — curates unforgettable experiences at the estate. Full-service event planning with world-class hospitality.",
+      "From elegant weddings and private celebrations to brand launches and corporate gatherings, EIRS curates memorable estate events with tailored planning, hospitality, and on-ground coordination.",
     image: eventsImg,
-    features: ["Weddings & Galas", "Corporate Retreats", "Polo Tournaments", "Private Celebrations"],
+    features: ["Weddings & Galas", "Corporate Retreats", "Brand Launches", "Private Celebrations"],
     status: "Now Booking",
     accent: "from-primary/10 to-transparent",
     href: EVENTS_APP_URL,
@@ -59,7 +57,6 @@ const Products = () => {
       <div className="noise-overlay" />
       <Navbar />
 
-      {/* Hero header */}
       <section className="pt-32 pb-8 px-6 md:px-16 lg:px-24">
         <motion.p
           initial={{ opacity: 0, y: 15 }}
@@ -75,7 +72,9 @@ const Products = () => {
           transition={{ duration: 0.8, delay: 0.4, ease: luxuryEase }}
           className="heading-display text-foreground text-4xl md:text-5xl lg:text-7xl max-w-4xl"
         >
-          The EIRS<br />Product Suite
+          The EIRS
+          <br />
+          Product Suite
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: 15 }}
@@ -87,7 +86,6 @@ const Products = () => {
         </motion.p>
       </section>
 
-      {/* Product cards */}
       <section className="px-6 md:px-16 lg:px-24 py-16 md:py-24 space-y-8">
         {products.map((product, i) => (
           <motion.div
@@ -108,7 +106,6 @@ const Products = () => {
             }}
           >
             <div className={`grid grid-cols-1 lg:grid-cols-2 min-h-[500px] ${i % 2 === 1 ? "lg:direction-rtl" : ""}`}>
-              {/* Image side */}
               <div className={`relative overflow-hidden aspect-[4/3] lg:aspect-auto ${i % 2 === 1 ? "lg:order-2" : ""}`}>
                 <img
                   src={product.image.src}
@@ -119,7 +116,6 @@ const Products = () => {
                 <div className="absolute bottom-0 left-0 right-0 h-px lg:h-full lg:w-px lg:right-0 lg:left-auto lg:top-0 bg-primary scale-x-0 lg:scale-y-0 group-hover:scale-x-100 lg:group-hover:scale-y-100 transition-transform duration-700 origin-left lg:origin-top" />
               </div>
 
-              {/* Content side */}
               <div className={`p-8 md:p-12 lg:p-16 flex flex-col justify-center bg-card ${i % 2 === 1 ? "lg:order-1" : ""}`}>
                 <motion.span
                   initial={{ opacity: 0 }}
@@ -138,35 +134,25 @@ const Products = () => {
                 <p className="prose-luxury text-sm md:text-base mb-8 max-w-md">{product.description}</p>
 
                 <div className="flex flex-wrap gap-2 mb-8">
-                  {product.features.map((f) => (
+                  {product.features.map((feature) => (
                     <span
-                      key={f}
+                      key={feature}
                       className="border-subtle px-4 py-2 label-mono text-[10px] text-muted-foreground transition-all duration-300 hover:text-primary hover:shadow-[0_0_0_1px_hsl(355_83%_40%/0.3)]"
                     >
-                      {f}
+                      {feature}
                     </span>
                   ))}
                 </div>
 
                 <div className="flex items-center gap-6">
-                  {product.href ? (
-                    <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
-                      <Link
-                        href={product.href}
-                        className="relative inline-flex overflow-hidden group/btn bg-primary px-8 py-4 transition-all duration-500 hover:shadow-[0_0_30px_hsl(355_83%_40%/0.4)]"
-                      >
-                        <span className="relative z-10 label-mono text-primary-foreground">Open App</span>
-                      </Link>
-                    </motion.div>
-                  ) : (
-                    <motion.button
-                      whileHover={{ scale: 1.02 }}
-                      whileTap={{ scale: 0.98 }}
-                      className="relative overflow-hidden group/btn bg-primary px-8 py-4 transition-all duration-500 hover:shadow-[0_0_30px_hsl(355_83%_40%/0.4)]"
+                  <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
+                    <Link
+                      href={product.href}
+                      className="relative inline-flex overflow-hidden group/btn bg-primary px-8 py-4 transition-all duration-500 hover:shadow-[0_0_30px_hsl(355_83%_40%/0.4)]"
                     >
-                      <span className="relative z-10 label-mono text-primary-foreground">Learn More</span>
-                    </motion.button>
-                  )}
+                      <span className="relative z-10 label-mono text-primary-foreground">Open App</span>
+                    </Link>
+                  </motion.div>
                   <span className={`label-mono text-xs ${product.status === "Now Booking" ? "text-primary" : "text-muted-foreground"}`}>
                     {product.status}
                   </span>
@@ -176,28 +162,6 @@ const Products = () => {
           </motion.div>
         ))}
       </section>
-
-      {/* Bottom CTA */}
-      {/* <section className="section-luxury text-center">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8, ease: luxuryEase }}
-        >
-          <p className="label-mono mb-6 opacity-60">Interested in Early Access?</p>
-          <h2 className="heading-display text-foreground text-3xl md:text-4xl lg:text-5xl mb-8">
-            Join the Waitlist
-          </h2>
-          <p className="prose-luxury max-w-lg mx-auto mb-10">
-            Be among the first to experience the future of equestrian technology and luxury living. Early partners receive priority onboarding and exclusive pricing.
-          </p>
-          <Link href="/contact" className="inline-flex items-center justify-center border-subtle px-8 py-4 transition-all duration-500 hover:border-primary group relative overflow-hidden">
-            <span className="relative z-10 label-mono group-hover:text-primary transition-colors">Contact Our Team</span>
-            <div className="absolute inset-0 bg-primary translate-y-full group-hover:translate-y-0 transition-transform duration-500" />
-          </Link>
-        </motion.div>
-      </section> */}
 
       <Footer />
     </div>
