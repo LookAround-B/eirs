@@ -6,6 +6,7 @@ import { toast } from "sonner";
 import { Mail, Phone, MapPin, Clock, Users } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Link from "next/link";
 
 const luxuryEase = [0.2, 0, 0, 1] as const;
 
@@ -107,9 +108,18 @@ const BookSession = () => {
           <h1 className="heading-display text-foreground text-4xl md:text-5xl lg:text-7xl max-w-3xl">
             Begin Your<br />Equestrian Journey
           </h1>
-          <p className="prose-luxury text-base md:text-lg mt-6 max-w-xl">
+          <p className="prose-luxury text-base md:text-lg mt-6 max-w-xl mb-10">
             Schedule a private session, arrange a stable tour, or plan an unforgettable experience at EIRS.
           </p>
+          <Link href="/book">
+            <motion.button
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+              className="relative overflow-hidden group bg-primary px-10 py-4 transition-all duration-500 hover:shadow-[0_0_30px_hsl(355_83%_40%/0.4)] inline-flex items-center gap-3"
+            >
+              <span className="relative z-10 label-mono text-primary-foreground">Book a Session</span>
+            </motion.button>
+          </Link>
         </motion.div>
       </section>
 
@@ -124,7 +134,8 @@ const BookSession = () => {
           {[
             { icon: MapPin, label: "Location", value: "Bangalore, India" },
             { icon: Clock, label: "Sessions", value: "6:00 AM – 6:00 PM" },
-            // { icon: Phone, label: "Helpline", value: "+91 98765 43210" },
+            { icon: Phone, label: "Office", value: "+91 98440 65013" },
+            { icon: Phone, label: "WhatsApp", value: "+91 73537 79533" },
             { icon: Mail, label: "Email", value: "bookings@eirs.in" },
           ].map((item, i) => (
             <div key={item.label} className="flex items-start gap-3 p-5 border-subtle bg-card/50">

@@ -72,7 +72,7 @@ const Experience = () => {
           <div className="absolute bottom-0 left-0 right-0 p-6 md:p-10">
             <span className="label-mono mb-2 block">Heritage Breeds</span>
             <h3 className="heading-display text-foreground text-2xl md:text-3xl">Bloodline Excellence</h3>
-            <p className="prose-luxury text-sm mt-2 max-w-sm">Curated collection of thoroughbreds, warmbloods, and Marwari horses — each bred for peak performance.</p>
+            <p className="prose-luxury text-sm mt-2 max-w-sm">Curated collection of thoroughbreds, warmbloods, and Arabian horses — each bred for peak performance.</p>
           </div>
         </motion.div>
       </div>

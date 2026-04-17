@@ -48,7 +48,6 @@ const Index = () => {
         author="Helen Thomson"
       />
       <Experience />
-      <Contact />
       <Footer />
     </div>
   );

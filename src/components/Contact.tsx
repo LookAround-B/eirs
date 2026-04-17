@@ -77,10 +77,11 @@ const Contact = () => {
               <p className="label-mono text-[10px] opacity-50 mb-1">Email</p>
               <p className="text-foreground text-sm">info@eirs.in</p>
             </div>
-            {/* <div>
-              <p className="label-mono text-[10px] opacity-50 mb-1">Phone</p>
-              <p className="text-foreground text-sm">+91 98765 43210</p>
-            </div> */}
+            <div>
+              <p className="label-mono text-[10px] opacity-50 mb-1">Contact Numbers</p>
+              <p className="text-foreground text-sm">+91 98440 65013 (Office)</p>
+              <p className="text-foreground text-sm mt-1">+91 73537 79533 (Preferably WhatsApp)</p>
+            </div>
           </div>
 
           {/* Embedded map placeholder */}
@@ -176,7 +177,7 @@ const Contact = () => {
                 <option value="polo" className="bg-background">Polo</option>
                 <option value="private" className="bg-background">Private Lessons</option>
                 <option value="retreat" className="bg-background">Equestrian Retreat</option>
-                <option value="products" className="bg-background">EIRS Products (Ai-Cavalli / EFM / Eclat Events)</option>
+                <option value="products" className="bg-background">EIRS Products (Ai-Cavalli / EFM / Events)</option>
                 <option value="other" className="bg-background">Other</option>
               </select>
             </div>

@@ -42,7 +42,7 @@ const images: GalleryImage[] = [
   { src: galleryBridle.src, title: "Chrome & Leather", category: "Equipment", hotspot: "Loose Ring Snaffle — German Silver", aspect: "square" },
   { src: estate.src, title: "Estate Aerial", category: "Facility", hotspot: "200+ Acres — 4 Competition Arenas", aspect: "landscape" },
   { src: galleryHerd.src, title: "Morning Run", category: "Horses", hotspot: "Turnout — 3 Thoroughbred Geldings", aspect: "landscape" },
-  { src: horsePortrait.src, title: "Silent Power", category: "Horses", hotspot: "Marwari Stallion — Breed Heritage", aspect: "landscape" },
+  { src: horsePortrait.src, title: "Silent Power", category: "Horses", hotspot: "Arabian Stallion — Breed Heritage", aspect: "landscape" },
   { src: galleryAerial.src, title: "The Ring", category: "Facility", hotspot: "Outdoor Menage — 60m × 20m, Sand & Fibre", aspect: "landscape" },
 ];
 

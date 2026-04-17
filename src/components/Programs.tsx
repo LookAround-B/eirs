@@ -22,7 +22,7 @@ const programs = [
   },
   {
     title: "Stable Management",
-    description: "World-class care and facility operations. 74 stalls designed for peak equine wellness.",
+    description: "World-class care and facility operations. 74 stables designed for peak equine wellness.",
     image: stableImg,
     tag: "03",
     href: EFM_APP_URL,

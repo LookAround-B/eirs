@@ -10,7 +10,6 @@ const footerLinks = [
   { label: "Products", href: "/products" },
   { label: "Programs", href: "/programs" },
   { label: "Experiences", href: "/experiences" },
-  { label: "Gallery", href: "/gallery" },
 ];
 
 const Footer = () => {
@@ -31,7 +30,7 @@ const Footer = () => {
               Your journey starts with a single stride
             </h3>
           </div>
-          <Link href="/#contact">
+          <Link href="/book">
             <motion.button
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
@@ -60,7 +59,7 @@ const Footer = () => {
             {/* Stats row */}
             <div className="flex gap-8">
               {[
-                { val: "100+", label: "Stalls" },
+                { val: "100+", label: "Stables" },
                 { val: "12", label: "Trainers" },
                 { val: "200+", label: "Acres" },
               ].map((stat) => (
@@ -89,16 +88,6 @@ const Footer = () => {
                   />
                 </Link>
               ))}
-              <a
-                href="/#contact"
-                className="group flex items-center gap-2 prose-luxury text-sm hover:text-primary transition-colors duration-300"
-              >
-                Contact
-                <ArrowUpRight
-                  size={12}
-                  className="opacity-0 -translate-y-0.5 group-hover:opacity-60 group-hover:translate-y-0 transition-all duration-300"
-                />
-              </a>
             </div>
           </div>
 
@@ -110,10 +99,14 @@ const Footer = () => {
                 <Mail size={14} className="text-primary shrink-0" />
                 info@eirs.in
               </a>
-              {/* <a href="tel:+919876543210" className="flex items-center gap-3 prose-luxury text-sm hover:text-primary transition-colors duration-300">
+              <a href="tel:+919844065013" className="flex items-center gap-3 prose-luxury text-sm hover:text-primary transition-colors duration-300">
                 <Phone size={14} className="text-primary shrink-0" />
-                +91 98765 43210
-              </a> */}
+                +91 98440 65013 (Office)
+              </a>
+              <a href="https://wa.me/917353779533" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 prose-luxury text-sm hover:text-primary transition-colors duration-300">
+                <Phone size={14} className="text-primary shrink-0" />
+                +91 73537 79533 (Preferably WhatsApp)
+              </a>
               <div className="flex items-start gap-3 prose-luxury text-sm">
                 <MapPin size={14} className="text-primary shrink-0 mt-0.5" />
                 <span>Embassy International Riding School,<br />Bangalore, India</span>
@@ -130,12 +123,12 @@ const Footer = () => {
         <p className="prose-luxury text-xs opacity-40">
           Powered by{" "}
           <a
-            href="https://looparound.in"
+            href="https://lookaround.in"
             target="_blank"
             rel="noopener noreferrer"
             className="text-primary hover:opacity-80 transition-opacity"
           >
-            LoopAround
+            LookAround
           </a>
         </p>
       </div>

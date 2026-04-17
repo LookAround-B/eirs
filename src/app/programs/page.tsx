@@ -44,16 +44,6 @@ const allPrograms = [
     features: ["Equine Nutrition", "Veterinary Basics", "Breeding Programs", "Facility Operations"],
   },
   {
-    title: "Cross-Country",
-    subtitle: "Across Open Terrain",
-    description: "Navigate natural obstacles across our expansive estate grounds. Build courage and partnership with your horse through water crossings, banks, ditches, and solid fences in open countryside.",
-    image: galleryGallop,
-    duration: "8–24 Weeks",
-    level: "Intermediate+",
-    tag: "04",
-    features: ["Water Complexes", "Bank Jumps", "Terrain Navigation", "Speed & Endurance"],
-  },
-  {
     title: "Arena Mastery",
     subtitle: "Foundation & Flatwork",
     description: "Foundational riding skills in our FEI-standard indoor and outdoor arenas. Develop a secure seat, soft hands, and effective aids that form the basis of every discipline.",
@@ -114,11 +104,11 @@ const ProgramsPage = () => {
           >
             {/* Image */}
             <div className={`relative overflow-hidden group ${i % 2 === 1 ? "lg:order-2" : ""}`}>
-              <div className="aspect-[4/3] overflow-hidden">
+              <div className="overflow-hidden">
                 <img
                   src={program.image.src}
                   alt={program.title}
-                  className="w-full h-full object-cover transition-all duration-700 group-hover:scale-105"
+                  className="w-full h-auto object-cover transition-all duration-700 group-hover:scale-105"
                 />
               </div>
               {/* Red line */}

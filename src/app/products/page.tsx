@@ -13,11 +13,11 @@ import { AI_CAVALLI_APP_URL, EFM_APP_URL, EVENTS_APP_URL } from "@/lib/app-links
 const products = [
   {
     name: "Ai-Cavalli",
-    tagline: "Equine Intelligence, Redefined",
+    tagline: "Ai-Cavalli, Reimagined",
     description:
-      "AI-powered biometric monitoring and health analytics for your horses. Real-time tracking of vitals, gait analysis, injury prediction, and performance optimization — all through a single intelligent platform.",
-    image: efmImg,
-    features: ["Real-time Biometrics", "Gait Analysis AI", "Injury Prediction", "Performance Reports"],
+      "An Indo-Italian café at EIRS—where tradition, taste, and equestrian elegance come together in a refined culinary experience. From rich Italian flavors to soulful Indian classics, Ai-Cavalli blends cultures seamlessly, creating a space where riders, guests, and enthusiasts can unwind, connect, and indulge in a setting inspired by the grace of the equestrian world.",
+    image: aiCavalliImg,
+    features: ["Indo-Italian Fusion", "Equestrian Café Experience", "Gourmet Dining", "Heritage Meets Modern Taste"],
     status: "Now Live",
     accent: "from-primary/20 to-transparent",
     href: AI_CAVALLI_APP_URL,
@@ -27,7 +27,7 @@ const products = [
     tagline: "Equestrian Facility Management",
     description:
       "End-to-end stable and facility management software. From feed scheduling and veterinary records to staff coordination and financial reporting — run your operation with surgical precision.",
-    image: aiCavalliImg,
+    image: efmImg,
     features: ["Stable Operations", "Vet Records", "Staff Management", "Financial Dashboard"],
     status: "Now Live",
     accent: "from-primary/15 to-transparent",
@@ -35,10 +35,10 @@ const products = [
   },
 
   {
-    name: "Eclat Events",
+    name: "Events",
     tagline: "Bespoke Event Booking & Curation",
     description:
-      "From black-tie galas and polo tournaments to intimate equestrian-themed weddings — Eclat curates unforgettable experiences at the estate. Full-service event planning with world-class hospitality.",
+      "From black-tie galas and polo tournaments to intimate equestrian-themed weddings — curates unforgettable experiences at the estate. Full-service event planning with world-class hospitality.",
     image: eventsImg,
     features: ["Weddings & Galas", "Corporate Retreats", "Polo Tournaments", "Private Celebrations"],
     status: "Now Booking",
@@ -178,7 +178,7 @@ const Products = () => {
       </section>
 
       {/* Bottom CTA */}
-      <section className="section-luxury text-center">
+      {/* <section className="section-luxury text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -197,7 +197,7 @@ const Products = () => {
             <div className="absolute inset-0 bg-primary translate-y-full group-hover:translate-y-0 transition-transform duration-500" />
           </Link>
         </motion.div>
-      </section>
+      </section> */}
 
       <Footer />
     </div>

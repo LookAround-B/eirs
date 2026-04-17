@@ -11,19 +11,19 @@ import { EFM_APP_URL, EVENTS_APP_URL, AI_CAVALLI_APP_URL } from "@/lib/app-links
 const products = [
   {
     name: "Ai-Cavalli",
-    tagline: "AI-Powered Equine Intelligence",
-    image: efmImg,
+    tagline: "Ai-Cavalli, Reimagined",
+    image: aiCavalliImg,
     href: AI_CAVALLI_APP_URL,
   },
   {
     name: "EFM",
     tagline: "Equestrian Facility Management",
-    image: aiCavalliImg,
+    image: efmImg,
     href: EFM_APP_URL,
   },
 
   {
-    name: "Eclat Events",
+    name: "Events",
     tagline: "Bespoke Event Booking & Curation",
     image: eventsImg,
     href: EVENTS_APP_URL,
