@@ -25,8 +25,8 @@ const quickInfo = [
   { icon: Clock, label: "Riding Days", value: "Tuesday to Sunday" },
   { icon: Clock, label: "Riding Slots", value: "7 AM, 8 AM, 9 AM, 3 PM, 4 PM, 5 PM" },
   { icon: Clock, label: "Office Hours", value: "9 AM - 6:30 PM" },
-  { icon: Phone, label: "Office", value: "+91 98440 65013" },
   { icon: Phone, label: "WhatsApp", value: "+91 73537 79533" },
+  { icon: Phone, label: "Office", value: "+91 98440 65013" },
   { icon: Mail, label: "Email", value: "info@eirs.app" },
 ];
 
