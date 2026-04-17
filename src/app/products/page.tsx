@@ -34,11 +34,7 @@ const products = [
   },
   {
     name: "Events",
-<<<<<<< HEAD
     tagline: "Estate Event Planning & Curation",
-=======
-    tagline: "State, National & International Events",
->>>>>>> 01037bc (ft: changes)
     description:
       "From elegant weddings and private celebrations to brand launches and corporate gatherings, EIRS curates memorable estate events with tailored planning, hospitality, and on-ground coordination.",
     image: eventsImg,
