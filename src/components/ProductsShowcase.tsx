@@ -11,7 +11,7 @@ import { EFM_APP_URL, EVENTS_APP_URL, AI_CAVALLI_APP_URL } from "@/lib/app-links
 const products = [
   {
     name: "Ai-Cavalli",
-    tagline: "Ai-Cavalli, Reimagined",
+    tagline: " Indo-Italian Restaurant",
     image: aiCavalliImg,
     href: AI_CAVALLI_APP_URL,
   },
@@ -24,7 +24,7 @@ const products = [
 
   {
     name: "Events",
-    tagline: "Bespoke Event Booking & Curation",
+    tagline: "State, National & International Events",
     image: eventsImg,
     href: EVENTS_APP_URL,
   },

@@ -12,7 +12,7 @@ import { AI_CAVALLI_APP_URL, EFM_APP_URL, EVENTS_APP_URL } from "@/lib/app-links
 const products = [
   {
     name: "Ai-Cavalli",
-    tagline: "Ai-Cavalli, Reimagined",
+    tagline: " Indo-Italian Restaurant",
     description:
       "An Indo-Italian cafe at EIRS where tradition, taste, and equestrian elegance come together in a refined culinary experience. From rich Italian flavors to soulful Indian classics, Ai-Cavalli blends cultures seamlessly for riders, guests, and enthusiasts alike.",
     image: aiCavalliImg,
@@ -34,7 +34,11 @@ const products = [
   },
   {
     name: "Events",
+<<<<<<< HEAD
     tagline: "Estate Event Planning & Curation",
+=======
+    tagline: "State, National & International Events",
+>>>>>>> 01037bc (ft: changes)
     description:
       "From elegant weddings and private celebrations to brand launches and corporate gatherings, EIRS curates memorable estate events with tailored planning, hospitality, and on-ground coordination.",
     image: eventsImg,
